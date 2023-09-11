@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lucky Draw :: Chai Sutta Bar</title>
-<style>
-*{
-  box-sizing: border-box;
-}
-html{
-  padding:0;margin:0;
-}
-body {
-  background:#5e3e1b;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
-  color:#f7e9c8;
-  padding:0;margin:0;
-}
-body > p{
-  display: block;
-  width:100%;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  text-align: center;
-  font-weight:bold;
-  font-size:1.25rem
-}
-</style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#5e3e1b"/>
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdnjs.cloudflare.com https://js.hcaptcha.com https://hcaptcha.com https://*.hcaptcha.com">
+	<link rel="stylesheet" href="styles.css"/>
+	<title>:: Lucky Draw - Chai Sutta Bar ::</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"  crossorigin></script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
-	<p>Launching 8th Sep 2023</p>
+	<main>
+		<div>
+			<ul class="luckyDrawTxt">
+				<li>Chai Sutta Bar</li>
+				<li>Lucky</li>
+				<li>Draw</li>
+			</ul>
+		</div>
+		<div id="reactAppRoot"></div>
+	</main>
+	<script src="./app.js"></script>
 </body>
 </html>
